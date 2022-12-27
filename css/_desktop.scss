@@ -1,0 +1,876 @@
+// -----@extend----// -----@extend----
+%flexbox {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+%getbutton {
+   width: 400px;
+   height: 80px;
+   background: $ross;
+   box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+   border-radius: 40px;
+   padding: 25px 99px;
+   text-align: center;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: $w;
+   transition: all 0.5s;
+
+   &:hover {
+      background: $liross;
+   }
+}
+
+%stylepoppins {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 60px;
+   margin-bottom: 26px;
+}
+
+%blockwithimg {
+   width: 1260px;
+   height: 560px;
+   margin: 0 auto;
+}
+
+%innersisebl {
+   width: 520px;
+   height: 158px;
+}
+
+// -----@extend----// -----@extend----
+
+
+.header {
+
+   &__inner {
+      @extend %flexbox;
+      padding: 79px 0;
+   }
+
+   &__logo {
+      width: 240px;
+      height: 38px;
+   }
+
+   &__button {
+      width: 136px;
+      height: 40px;
+      padding: 9px 29px;
+      background: $w;
+      border: 1px solid $ross;
+      box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+      border-radius: 20px;
+      transition: .5s;
+
+      &:hover {
+         border: 1px solid $liross;
+      }
+   }
+
+   &__button-click {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $ross;
+      text-decoration: none;
+   }
+}
+
+.main {
+
+   .build {
+      margin: 0 auto;
+
+      &__inner {
+         padding: 147px 0 125px;
+         width: 1017px;
+         min-height: 1157px;
+         margin: 0 auto;
+      }
+
+      &__inner-title {
+         @extend %stylepoppins;
+         font-size: 48px;
+         line-height: 72px;
+         margin-bottom: 26px;
+      }
+
+      &__inner-text {
+         width: 600px;
+         font-size: 20px;
+         line-height: 30px;
+         text-align: center;
+         margin-left: 208px;
+         margin-bottom: 49px;
+      }
+
+      &__inner-getbtnlink {
+         text-decoration: none;
+         display: block;
+         width: 400px;
+         height: 80px;
+         margin-left: 308px;
+         margin-bottom: 120px;
+         transition: all .5s;
+      }
+
+      &__inner-pic {
+         width: 1017px;
+         height: 720px;
+         position: relative;
+      }
+   }
+
+   .inner {
+
+      &__click {
+         @extend %getbutton;
+
+      }
+
+      &__tabl1 {
+         width: 960px;
+         height: 600px;
+         position: absolute;
+      }
+
+      &__tabl2 {
+         width: 320px;
+         height: 512px;
+         position: absolute;
+         top: 208px;
+         left: 686px;
+      }
+   }
+
+
+   .statistic {
+      padding-bottom: 133px;
+      width: 880px;
+      margin: 0 auto;
+
+      &__inner {
+         height: 222px;
+         @extend %flexbox;
+
+         &_pic {
+            width: 56px;
+            height: 56px;
+         }
+
+         &_numbers {
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 144px;
+         }
+
+         &_text {
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #808E9A;
+         }
+      }
+   }
+
+   .grow {
+      height: 842px;
+      padding: 165px 0 116px;
+      background-image: url(../images/desktop/blue_bg.png);
+
+      &__inner {
+         @extend %flexbox;
+         @extend %blockwithimg;
+      }
+
+      &__inner-content {
+         @extend %innersisebl;
+      }
+
+      &__inner-title {
+         @extend %stylepoppins;
+
+      }
+
+      &__inner-txt {
+         font-size: 16px;
+         line-height: 24px;
+      }
+
+      &__inner-img {
+         height: 560px;
+      }
+   }
+
+   .flow {
+      padding: 103px 0 22px;
+
+      &__inner {
+         @extend %flexbox;
+         @extend %blockwithimg;
+      }
+
+      &__inner-img {
+         width: 560px;
+         height: 560px;
+      }
+
+      &__inner-content {
+         @extend %innersisebl;
+      }
+
+      &__inner-title {
+         @extend %stylepoppins;
+      }
+
+      &__inner-txt {
+         font-size: 16px;
+         line-height: 24px;
+      }
+   }
+
+   .users {
+      height: 792px;
+      background-image: url(../images/desktop/blue_bg2.png);
+      padding: 114px 0 118px;
+
+      &__inner {
+         @extend %flexbox;
+         @extend %blockwithimg;
+      }
+
+      &__inner-content {
+         @extend %innersisebl;
+      }
+
+      &__inner-title {
+         @extend %stylepoppins;
+      }
+
+      &__inner-txt {
+         font-size: 16px;
+         line-height: 24px;
+      }
+
+      &__inner-img {
+         height: 560px;
+      }
+   }
+
+   .build2 {
+
+      &__inner {
+         width: 684px;
+         min-height: 500px;
+         padding: 138px 0 178px;
+         margin: 0 auto;
+      }
+
+      &__inner-title {
+         @extend %stylepoppins;
+         margin-bottom: 42px;
+      }
+
+      &__inner-getbtnlink {
+         text-decoration: none;
+         display: block;
+         width: 400px;
+         height: 80px;
+         margin-left: 131px;
+      }
+   }
+
+   .inner {
+
+      &__click {
+         @extend %getbutton;
+      }
+   }
+}
+
+
+.news {
+   background-image: url(../images/desktop/darkgreen_bg.png);
+   height: 720px;
+   padding: 248px 0 103px;
+
+   &__inner {
+      display: flex;
+   }
+
+   &__inner-leftcont {
+      width: 50%;
+      padding-left: 108px;
+   }
+
+   &__inner-rightcont {
+      width: 50%;
+      padding-left: 75px;
+   }
+}
+
+.leftcont {
+
+   &__footlogo {
+      display: block;
+      margin-bottom: 36px;
+   }
+
+   &__txt {
+      width: 340px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: $w;
+      margin-bottom: 21px;
+   }
+
+   &__phone {
+      width: 222px;
+      height: 24px;
+      font-size: 16px;
+      line-height: 24px;
+      color: $w;
+      margin-bottom: 16px;
+      position: relative;
+      padding-left: 40px;
+
+      &::before {
+         content: "";
+         background-image: url(../images/mini-img/phone.png);
+         width: 24px;
+         height: 24px;
+         position: absolute;
+         left: 0;
+      }
+   }
+
+   &__email {
+      width: 208px;
+      height: 24px;
+      font-size: 16px;
+      line-height: 24px;
+      color: $w;
+      margin-bottom: 87px;
+      position: relative;
+      padding-left: 40px;
+
+      &::before {
+         content: "";
+         background-image: url(../images/mini-img/email.png);
+         width: 24px;
+         height: 24px;
+         position: absolute;
+         left: 0;
+      }
+
+   }
+
+   &__socblock {
+      width: 144px;
+      height: 32px;
+      @extend %flexbox;
+      transition: .5s;
+
+      img:hover {
+
+         mix-blend-mode: color;
+         background: #00C7FA;
+         // Як налаштувати зміну кольору іконкам соц мереж при наведенні ?
+      }
+   }
+}
+
+.rightcont {
+
+   &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: $w;
+      margin-bottom: 16px;
+   }
+
+   &__txt {
+      width: 344px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: $w;
+      margin-bottom: 40px;
+   }
+
+   &__form {
+      width: 520px;
+      display: flex;
+
+
+      input[type=email] {
+         border: none;
+         background: $w;
+         border-radius: 6px;
+         width: 320px;
+         height: 48px;
+         font-size: 14px;
+         line-height: 24px;
+         color: $dgr;
+         padding: 12px 16px;
+         margin-right: 40px;
+
+         &::placeholder {
+            color: $dgr;
+         }
+      }
+
+      input[type=submit] {
+         border: none;
+         width: 160px;
+         height: 48px;
+         background: $ross;
+         border-radius: 5px;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 24px;
+         color: $w;
+         padding: 12px 41px;
+
+         &:hover {
+            cursor: pointer;
+            background: $liross;
+         }
+      }
+   }
+}
+
+
+
+
+@media (max-width:400px) {
+   .header {
+
+      &__inner {
+         padding: 24px 0;
+
+         img {
+            width: 96px;
+            height: 16px;
+         }
+      }
+
+      &__logo {
+         width: 96px;
+         height: 16px;
+      }
+
+      &__button {
+         width: 80px;
+         height: 24px;
+         padding: 5px 17px;
+         border-radius: 11px;
+
+         &:hover {
+            border: 1px solid $liross;
+         }
+      }
+
+      &__button-click {
+         display: block;
+         font-size: 9.4px;
+         line-height: 13px;
+      }
+   }
+
+   .main {
+
+      .build {
+         margin: 0 auto;
+
+         &__inner {
+            padding: 88px 0 120px;
+            width: 296px;
+            min-height: 581px;
+            margin: 0 auto;
+         }
+
+         &__inner-title {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+            text-align: center;
+         }
+
+         &__inner-text {
+            width: 296px;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            margin-left: 0px;
+            margin-bottom: 48px;
+         }
+
+         &__inner-getbtnlink {
+            display: block;
+            margin: 0 48px;
+            width: 200px;
+            height: 40px;
+            margin-bottom: 104px;
+         }
+
+         &__inner-pic {
+            width: 296px;
+            height: 209px;
+            position: relative;
+      
+         }
+      }
+
+      .inner {
+
+         &__click {
+            width: 200px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 11px 39px;
+
+         }
+
+         &__tabl1 {
+            width: 280px;
+            height: 174px;
+         }
+
+         &__tabl2 {
+            width: 93px;
+            height: 148px;
+            top: 60px;
+            left: 200px;
+         }
+      }
+
+
+      .statistic {
+         padding: 0 93px ;
+         padding-bottom: 0px;
+         width: 375px;
+         margin: 0;
+
+
+         &__inner {
+            width: 160px;
+            height: 356px;
+            display: block;
+
+            &_communiti {
+               margin-bottom: 88px;
+            }
+
+            &_pic {
+               width: 29px;
+               height: 26px;
+            }
+
+            &_numbers {
+               font-size: 53px;
+               line-height: 80px;
+            }
+
+            &_text {
+               font-size: 15px;
+               line-height: 23px;
+            }
+         }
+      }
+
+      .grow {
+         height: 763px;
+         padding-top: 501px;
+         background-image: url(../images/mobile/bluebg_mob.png);
+         position: relative;
+
+         &__inner {
+            display: block;
+            width: 320px;
+            height: 130px;
+         
+
+         }
+
+         &__inner-content {
+            width: 320px;
+            height: 130px;
+            text-align: center;
+            margin-right: 0;
+         }
+
+         &__inner-title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 16px;
+
+         }
+
+         &__inner-txt {
+            font-size: 14px;
+            line-height: 21px;
+            width: 320px;
+            height: 84px;
+         }
+
+         &__inner-img {
+            height: 0px;
+            width: 0;
+            // Незнаю чи правильно тут писати 0px для блоку картинки, бо якщо пишу none, то відображається пуста висота в інспекторі?
+            img {
+               position: absolute;
+               top: 180px;
+               left: 48px;
+               width: 280px;
+            }
+         }
+      }
+
+      .flow {
+         padding: 67px 0 0;
+         margin-bottom: 120px;
+
+         &__inner {
+            display: block;
+            width: 320px;
+            height: 429px;
+         }
+
+         &__inner-img {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+
+            img {
+               width: 280px;
+            }
+         }
+
+         &__inner-content {
+            width: 320px;
+            height: 130px;
+         }
+
+         &__inner-title {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0 42px 16px;
+         }
+
+         &__inner-txt {
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+         }
+      }
+
+      .users {
+         height: 803px;
+         background-image: url(../images/mobile/bluebg_mob2.png);
+         background-repeat: no-repeat;
+         padding: 446px 0 0px;
+         position: relative;
+
+         &__inner {
+            display: block;
+            width: 320px;
+            height: 130px;
+
+         }
+
+         &__inner-content {
+            width: 320px;
+            height: 130px;
+         }
+
+         &__inner-title {
+            font-size: 20px;
+            line-height: 30px;
+            width: 110px;
+            margin: 0 108px 16px;
+         }
+
+         &__inner-txt {
+            width: 320px;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+
+         }
+
+         &__inner-img {
+            height: 0;
+
+            img {
+               width: 280px;
+               position: absolute;
+               top: 119px;
+               left: 48px;
+            }
+         }
+      }
+
+      .build2 {
+         margin-bottom: 251px;
+         &__inner {
+            width: 344px;
+            min-height: 72px;
+            padding: 0 0 0;
+        
+         }
+
+         &__inner-title {
+            margin-bottom: 40px;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+
+         }
+
+         &__inner-getbtnlink {
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: 0 70px;
+         }
+      }
+   }
+
+
+   .news {
+      background-image: url(../images/mobile/footer.png);
+      height: 840px;
+      padding: 108px 0 0px;
+      position: relative;
+
+      &__inner {
+         display: block;
+      }
+
+      &__inner-leftcont {
+         width: 320px;
+         height: 295px;
+         padding-left: 0px;
+         position: absolute;
+         top: 498px;
+         left: 48px;
+      }
+
+      &__inner-rightcont {
+         width: 320px;
+         height: 286px;
+         padding-left: 0px;
+      }
+   }
+
+   .leftcont {
+
+      &__footlogo {
+         display: block;
+         margin-bottom: 16px;
+         img {
+            width: 200px;
+            height: 32px;
+         }
+      }
+
+      &__txt {
+         width: 320px;
+         margin-bottom: 40px;
+      }
+
+      &__phone {
+         width: 222px;
+         height: 24px;
+         font-size: 16px;
+         line-height: 24px;
+         color: $w;
+         margin-bottom: 16px;
+         position: relative;
+         padding-left: 40px;
+
+         &::before {
+            content: "";
+            background-image: url(../images/mini-img/phone.png);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 0;
+         }
+      }
+
+      &__email {
+         width: 208px;
+         height: 24px;
+         font-size: 16px;
+         line-height: 24px;
+         color: $w;
+         margin-bottom: 48px;
+         position: relative;
+         padding-left: 40px;
+
+         &::before {
+            content: "";
+            background-image: url(../images/mini-img/email.png);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 0;
+         }
+
+      }
+      &__socblock {
+         width: 104px;
+         height: 23px;
+
+         img {
+            width: 23px;
+         }
+      }
+   }
+
+   .rightcont {
+
+      &__title {
+         font-size: 20px;
+         line-height: 30px;
+      }
+
+      &__txt {
+         width: 320px;
+         margin-bottom: 32px;
+      }
+
+      &__form {
+         width: 320px;
+         height: 112px;
+         display: block;
+
+
+         input[type=email] {
+            margin-right: 0px;
+            margin-bottom: 16px;
+         }
+
+         input[type=submit] {
+            margin-left: 160px;
+            &:hover {
+               cursor: pointer;
+               background: $liross;
+            }
+         }
+      }
+   }
+
+}

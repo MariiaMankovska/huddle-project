@@ -1,0 +1,40 @@
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+width: 1440px;
+margin: 0 auto;
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+color: $dgr;
+background: $w;
+}
+
+.container {
+max-width: 1320px;
+margin: 0 auto;
+}
+
+
+@media (max-width:400px) {
+    .wrapper {
+        max-width: 375px;
+        }
+        
+        .container {
+        max-width: 327px;
+        }  
+
+}
